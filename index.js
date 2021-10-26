@@ -7,6 +7,9 @@ const app = express();
 //config
 app.set('port', port);
 
+//allow data
+app.use(express.json())
+
 //routes
 app.use('/api', require('./routes'))
 
